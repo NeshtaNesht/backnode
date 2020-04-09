@@ -1,0 +1,12 @@
+<div class="add">    
+    <form action="/addcategory" method="post">
+        {{#if categoryAdded}}
+            <p><span style="color: lightgreen; font-size: 20px;">Категория добавлена</span></p>
+        {{else}}
+            <p><span style="color: red; font-size: 20px;">Ошибка при добавлении категории</span></p>
+        {{/if}}
+        <label>Наименование категории</label><br>
+        <p><input type="text" name="name" /></p>        
+        <input type="submit" value="Добавить" />
+    </form>
+</div>

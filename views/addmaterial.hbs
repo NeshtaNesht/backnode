@@ -1,0 +1,23 @@
+<div class="add">    
+    <form action="/addmaterial" method="post">
+        {{#if materialAdded}}
+            <p><span style="color: lightgreen; font-size: 20px;">Материал добавлен</span></p>
+        {{else}}
+            <p><span style="color: red; font-size: 20px;">Ошибка при добавлении материала</span></p>
+        {{/if}}
+        <p><input checked type="radio" name="type" id="" value="Новость">Новость</p>
+        <p><input type="radio" name="type" id="" value="Статья">Статья</p>
+        <label>Заголовок</label><br>
+        <p><input type="text" name="zagolovok" /></p>
+        <label>Категория</label><br>
+        <p><select name="category" id="">
+            {{#each categories}}
+                <option value="{{this.name}}">{{this.name}}</option>
+            {{/each}}
+        </select></p><br>
+        <label>Текст</label><br>
+        <p><textarea name="text" id="" cols="30" rows="10">
+        </textarea></p>
+        <input type="submit" value="Добавить" />
+    </form>
+</div>

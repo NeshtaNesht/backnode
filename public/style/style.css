@@ -1,0 +1,221 @@
+body{
+    background-color: #eee;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.header{     
+    height: 300px;
+    width: 100%;    
+}
+
+.leftmenu{
+    position: relative;
+    width: 20%;
+    height: 400px;   
+}
+
+.menu {
+    position: relative;
+    margin-left: 20px;
+    border: 1px solid lightgray;
+    z-index:0;
+}
+
+.menu ul li {    
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    list-style-type: none;
+    border-right: 0px;
+    
+}
+
+.menu ul li a:hover {
+    color: black;
+    font-weight: 600;
+}
+
+.footer{
+    position: relative;
+    height: 50px;   
+    margin-left: 20px;    
+    text-align: center;
+    border: 1px solid lightgray;
+    z-index: 3;
+}
+
+.footer p {
+    position: relative;
+    top:  15%;
+}
+
+.body{
+    float: right;
+    position: relative;
+    background-color: #eee;
+    width: 80%;
+    height: 400px;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    z-index: 2;
+}
+
+.body .about {
+    text-align: center;
+    font-size: 20px;
+    color: gray;
+    padding: 50px 40px;
+}
+
+.container{    
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;    
+}
+
+.header-text{     
+    position: relative;    
+    top: 20%;
+    text-align: center;  
+}
+
+.header-text>p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 80px;
+    font-weight: bold;    
+}
+.header-text>p>span {
+    font-size: 100px;
+}
+
+.header-text:last-child {
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+.news {
+    border-left: 0px;    
+}
+
+.news .new:hover {
+    box-shadow: 0 0 10px;
+    transition: 0.2s;
+}
+
+.news .new {
+    margin: 20px 50px 20px 50px;
+    background-color: #eeeeee;
+    border: 1px solid lightgray;
+    
+}
+
+.news .article {
+    margin: 20px 50px 20px 50px;
+    background-color: snow;
+    border: 1px solid snow;
+}
+
+.news .new #zagolovok {
+    border-left: 15px solid lightgray;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: gray;
+    padding: 0 10px;
+    border-bottom: 2px solid lightgray;
+}
+
+#date {
+    font-size: 12px;
+    padding: 0 10px;
+    color: gray;
+}
+
+.news .new #text {
+    font-size: 16px;
+    padding: 10px 10px;
+    color: gray;
+}
+
+.news .new #category {    
+    float: right;
+    color: black;
+    font-style: oblique;
+    font-size: 15px;
+    font-weight: bold;;
+}
+
+.news .article #zagolovok {
+    border-left: 15px solid lightgray;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: gray;
+    padding: 0 10px;
+    border-bottom: 2px solid lightgray;
+}
+
+.news .article #date {
+    font-size: 12px;
+    padding: 0 10px;
+    color: gray;
+}
+
+.news .article #text {
+    font-size: 16px;
+    padding: 10px 10px;
+    color: gray;
+}
+
+.news .article #category {    
+    float: right;
+    color: black;
+    font-style: oblique;
+    font-size: 15px;
+    font-weight: bold;;
+}
+
+.auth {
+    font-size: 20px;
+    position: relative;
+    left: 40%;
+    top: 25%;
+}
+
+input, select {
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    border: 2px solid orange;
+    border-radius: 5px;
+    background-color: orange;
+    color: black;
+    font-weight: 600;
+}
+
+input[type=submit]:hover {
+    transition: 0.2s;
+    border: 2px solid orangered;
+    background-color: orangered;
+    color: white;
+}
+
+.add {
+    font-size: 20px;
+    position: relative;
+    left: 20%;
+    top: 10%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}

@@ -1,0 +1,7 @@
+<div class="newsread">
+    {{#each news}}
+        <h1 style="color: gray; padding: 20px;">{{this.zagolovok}}</h1>
+        <div id="date" >Опубликовано: {{this.date}}</div>
+        <div style="padding: 25px; color: gray; text-align:justify">{{this.text}}</div>    
+    {{/each}}
+</div>

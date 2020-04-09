@@ -1,0 +1,18 @@
+
+        <div class="news">
+            {{#each news}}
+                <a href="/newsread/{{this.id}}">
+                    <div class="new" id="{{this.id}}">
+                        <p id="zagolovok">
+                            {{this.zagolovok}}
+                            <span id="category">
+                                {{this.name}}
+                            </span>
+                        </p>
+                        <p id="date">Опубликовано: {{this.date}}</p>
+                        <p id="text"><span style="margin-right: 5px;">➜</span>{{this.text}}</p>                 
+                    </div>                                          
+                </a>    
+            {{/each}}
+        </div>
+    

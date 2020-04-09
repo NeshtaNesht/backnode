@@ -1,0 +1,14 @@
+<div class="auth">
+        <form action="/auth" method="POST">
+            <label>Логин</label><br>
+            <input type="text" name="login" /><br>
+            <label>Пароль</label><br>
+            <input type="password" name="password" /><br><br>
+            <input type="submit" value="Войти" />
+        </form>
+        <span style="color: red; font-size: 20px;">
+            {{#if no_auth }}
+                Неверный логин или пароль
+            {{/if}}
+        </span>
+</div>

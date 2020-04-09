@@ -1,0 +1,37 @@
+<div class="menu">    
+            <ul><span style="font-size: 12px;">{{user}}</span>
+                <li>
+                    <a href="/auth">Авторизация</a>
+                </li>
+                <li>
+                    <a href="/">Новости</a>
+                    <ul>
+                        {{#each categories}}
+                            <li>
+                                <span>•</span> <a href="/newscat/{{this.name}}">{{this.name}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </li>
+                <li>
+                    <a href="/articles">Статьи</a>
+                    <ul>
+                        {{#each categories}}
+                            <li>
+                                <span>•</span> <a href="/articlecat/{{this.name}}">{{this.name}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </li>
+                <li>
+                    <a href="/about">О сайте</a>
+                </li>
+                    {{#ifeq user_group "Администратор" }}
+                        <li>
+                            <a href="/addmaterial">Добавить материал</a>
+                        </li>
+                        <li><a href="/addcategory">Добавить категорию</a></li>
+                    {{/ifeq}}
+            </ul>
+            
+        </div>
